@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  #container{
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+
+</style>
+<body>
+   <div id="container">
+    <a href="/profile"  class="mb-3"  class="btn btn-primary"> profile </a>
+    <div class="d-flex">
+  <%  allusers.forEach(function(elem){ %>
+    <div class="card"  style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">  name: <%= elem.name %></h5>
+          <p class="card-text"> email: <%= elem.email %> </p>
+          <p class="card-text">username: <%= elem.username %> </p>
+       
+        </div>
+      </div>
+ <% }) %> 
+   
+   </div>
+</div>
+</body>
+</html>
